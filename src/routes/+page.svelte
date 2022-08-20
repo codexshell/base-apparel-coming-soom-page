@@ -76,6 +76,10 @@
 			padding-right: 12rem;
 			flex-basis: 57.5%;
 			padding-bottom: theme('padding.40');
+			background-image: url("/bg-pattern-desktop.svg");
+			background-repeat: no-repeat;
+			background-position: top left;
+			background-size: cover;
 		}
 
 		.hero-desktop {
