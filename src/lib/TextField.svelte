@@ -75,7 +75,7 @@
 		filter: brightness(1.2);
 	}
 
-	@media (min-width: theme('screens.lg')) {
+	@media (min-width: theme('screens.sm')) {
 		button {
 			width: 6.5rem;
 		}

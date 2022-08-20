@@ -43,9 +43,28 @@
 		padding-bottom: theme('padding.24');
 	}
 
+	@media (min-width: theme('screens.sm')) {
+		section {
+			padding-inline: theme('padding.12');
+		}
+	}
+
+	@media (min-width: theme('screens.md')) {
+		section {
+			padding-inline: theme('padding.20');
+		}
+	}
+
+	@media (min-width: theme('screens.lg')) {
+		section {
+			padding-inline: theme('padding.48');
+		}
+	}
+
 	@media (min-width: theme('screens.xl')) {
 		section {
 			display: flex;
+			padding: 0;
 			padding-bottom: 0;
 		}
 	}
@@ -77,6 +96,18 @@
 
 	.logo img {
 		width: theme('width.28');
+	}
+
+	@media (min-width: theme('screens.sm')) {
+		.logo img {
+			width: theme('width.32');
+		}
+	}
+
+	@media (min-width: theme('screens.md')) {
+		.logo img {
+			width: theme('width.36');
+		}
 	}
 
 	@media (min-width: theme('screens.xl')) {
@@ -120,6 +151,12 @@
 		line-height: theme('lineHeight.tight');
 	}
 
+	@media (min-width: theme('screens.md')) {
+		h1 {
+			font-size: theme('fontSize.5xl');
+		}
+	}
+
 	@media (min-width: theme('screens.xl')) {
 		h1 {
 			font-size: theme('fontSize.6xl');
@@ -140,9 +177,27 @@
 		color: theme('colors.p-desaturated-red');
 	}
 
-	@media (min-width: theme('screens.xl')) {
+	@media (min-width: theme('screens.sm')) {
+		p {
+			padding-inline: theme('padding.7');
+		}
+	}
+
+	@media (min-width: theme('screens.md')) {
 		p {
 			font-size: theme('fontSize.base');
+			padding-inline: theme('padding.8');
+		}
+	}
+
+	@media (min-width: theme('screens.lg')) {
+		p {
+			padding-inline: theme('padding.14');
+		}
+	}
+
+	@media (min-width: theme('screens.xl')) {
+		p {
 			text-align: left;
 			--flow-space: 1.5rem;
 			line-height: theme('lineHeight.relaxed');
