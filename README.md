@@ -1,38 +1,71 @@
-# create-svelte
+# Frontend Mentor - Base Apparel coming soon page solution
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Creating a project
+## Table of contents
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Overview
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### The challenge
 
-## Developing
+Users should be able to:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Receive an error message when the `form` is submitted if:
+  - The `input` field is empty
+  - The email address is not formatted correctly
 
-```bash
-npm run dev
+### Screenshot
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+![desktop screenshot](/screenshot.png)
 
-## Building
+### Links
 
-To create a production version of your app:
+- Solution URL: [source code](https://github.com/codexshell/base-apparel-coming-soom-page)
+- Live Site URL: [website](http://base-apparel-coming-soom-page.vercel.app/)
 
-```bash
-npm run build
-```
+## My process
 
-You can preview the production build with `npm run preview`.
+### Built with
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [SvelteKit](https://svelte.dev/) - Svelte framework
+- [tailwindcss](https://tailwindcss.com/) - CSS framework
+
+### What I learned
+
+- Input elements do not support pseudoelements
+- Pseudoelements can only be defined on container elements. Input elements cannot contain other elements hence they do not support pseudo-elements
+- Input validation using JavaScript (client-side form validation)
+
+### Continued development
+
+[Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+### Useful resources
+
+- [Client-side form validation](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validationhttps://www.example.com) - This helped me use JavaScript alongside HTML for input validation
+
+- [Can I use a :before or :after pseudo-element on an input field?](https://stackoverflow.com/questions/2587669/can-i-use-a-before-or-after-pseudo-element-on-an-input-field?answertab=trending#tab-tophttps://stackoverflow.com/questions/2587669/can-i-use-a-before-or-after-pseudo-element-on-an-input-field?answertab=trending#tab-top) - Allowed me to understand which element types can have pseudo-elements
+
+## Author
+
+- Website - [Silvanos Eric](https://codexshell.github.io/)
+- Frontend Mentor - [@codexshell](https://www.frontendmentor.io/profile/codexshell)
+- Twitter - [@codexshell](https://twitter.com/codexshell)
