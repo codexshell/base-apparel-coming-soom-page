@@ -205,6 +205,7 @@
 			text-align: left;
 			--flow-space: 1.5rem;
 			line-height: theme('lineHeight.relaxed');
+			padding-inline: 0;
 		}
 	}
 
