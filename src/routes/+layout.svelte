@@ -11,5 +11,8 @@
 <style>
 	:global(body) {
 		font-family: theme("fontFamily.josefin-sans");
+		min-height: 100vh;
+		max-width: 90rem;
+		background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 	}
 </style>

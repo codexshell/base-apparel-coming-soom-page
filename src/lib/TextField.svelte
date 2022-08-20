@@ -27,12 +27,18 @@
 
 <style>
 	form {
-		--flow-space: 1.5rem;
+		--flow-space: 2rem;
 		background-color: transparent;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		position: relative;
+	}
+
+	@media (min-width: theme('screens.xl')) {
+		form {
+			--flow-space: 3rem;
+		}
 	}
 
 	input {
@@ -69,6 +75,12 @@
 		filter: brightness(1.2);
 	}
 
+	@media (min-width: theme('screens.lg')) {
+		button {
+			width: 6.5rem;
+		}
+	}
+
 	button span {
 		content: '';
 		background: url('/icon-error.svg') no-repeat;
@@ -86,6 +98,7 @@
 		text-align: left;
 		padding-left: theme('padding.8');
 		display: none;
+		position: absolute;
 	}
 
 	/* display paragraph when invalid is true */

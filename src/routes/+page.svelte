@@ -8,35 +8,67 @@
 </svelte:head>
 
 <section class="flow">
-	<!-- * logo -->
-	<div class="logo">
-		<img src="/logo.svg" alt="" />
+	<div class="left">
+		<!-- * logo -->
+		<div class="logo">
+			<img src="/logo.svg" alt="" />
+		</div>
+
+		<!-- * hero mobile -->
+		<div class="hero-mobile">
+			<img src="/hero-mobile.jpg" alt="" />
+		</div>
+
+		<!-- * textual content -->
+		<div class="content | flow">
+			<h1><span>We're</span> coming soon</h1>
+
+			<p>
+				Hello fellow shoppers! We're currently building our new fashion store. Add your email below
+				to stay up-to-date with announcements and our launch deals.
+			</p>
+
+			<!-- * email address input field -->
+			<TextField />
+		</div>
 	</div>
-
-	<!-- * hero mobile -->
-	<div class="hero">
-		<img src="/hero-mobile.jpg" alt="" />
-	</div>
-
-	<!-- * textual content -->
-	<div class="content | flow">
-		<h1><span>We're</span> coming soon</h1>
-
-		<p>
-			Hello fellow shoppers! We're currently building our new fashion store. Add your email below to
-			stay up-to-date with announcements and our launch deals.
-		</p>
-
-		<!-- * email address input field -->
-		<TextField />
+	<!-- * hero desktop -->
+	<div class="hero-desktop">
+		<img src="/hero-desktop.jpg" alt="" />
 	</div>
 </section>
 
 <style>
 	section {
-		min-height: 100vh;
-		background: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 		padding-bottom: theme('padding.24');
+	}
+
+	@media (min-width: theme('screens.xl')) {
+		section {
+			display: flex;
+			padding-bottom: 0;
+		}
+	}
+
+	@media (min-width: theme('screens.xl')) {
+		.left {
+			padding-top: theme('padding.8');
+			padding-left: 8.25rem;
+			padding-right: 12rem;
+			flex-basis: 57.5%;
+			padding-bottom: theme('padding.40');
+		}
+
+		.hero-desktop {
+			flex-basis: 42.5%;
+			--flow-space: ;
+		}
+
+		.hero-desktop img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 
 	.logo {
@@ -47,11 +79,23 @@
 		width: theme('width.28');
 	}
 
-	.hero {
+	@media (min-width: theme('screens.xl')) {
+		.logo img {
+			width: theme('width.40');
+		}
+	}
+
+	.hero-mobile {
 		--flow-space: ;
 	}
 
-	.hero img {
+	@media (min-width: theme('screens.xl')) {
+		.hero-mobile {
+			display: none;
+		}
+	}
+
+	.hero-mobile img {
 		margin-inline: auto;
 	}
 
@@ -59,6 +103,12 @@
 		padding-inline: theme('padding.8');
 		text-align: center;
 		--flow-space: 3.75rem;
+	}
+
+	@media (min-width: theme('screens.xl')) {
+		.content {
+			--flow-space: 6rem;
+		}
 	}
 
 	h1 {
@@ -70,6 +120,15 @@
 		line-height: theme('lineHeight.tight');
 	}
 
+	@media (min-width: theme('screens.xl')) {
+		h1 {
+			font-size: theme('fontSize.6xl');
+			letter-spacing: 1.25rem;
+			text-align: left;
+			line-height: 1.15;
+		}
+	}
+
 	h1 span {
 		color: theme('colors.p-desaturated-red');
 		font-weight: 300;
@@ -79,5 +138,24 @@
 		font-size: theme('fontSize.sm');
 		--flow-space: 1rem;
 		color: theme('colors.p-desaturated-red');
+	}
+
+	@media (min-width: theme('screens.xl')) {
+		p {
+			font-size: theme('fontSize.base');
+			text-align: left;
+			--flow-space: 1.5rem;
+			line-height: theme('lineHeight.relaxed');
+		}
+	}
+
+	.hero-desktop {
+		display: none;
+	}
+
+	@media (min-width: theme('screens.xl')) {
+		.hero-desktop {
+			display: block;
+		}
 	}
 </style>
