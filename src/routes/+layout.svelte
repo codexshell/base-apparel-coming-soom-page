@@ -8,4 +8,8 @@
 </main>
 
 
-<style></style>
+<style>
+	:global(body) {
+		font-family: theme("fontFamily.josefin-sans");
+	}
+</style>
